@@ -3,9 +3,6 @@ const state = {
 };
 
 const actions = {
-  getAllTransactions({ commit }) {
-    commit("getAllTransactions");
-  },
   addTransaction({ commit }, data) {
     commit("addTransaction", data);
   },
@@ -15,9 +12,6 @@ const actions = {
 };
 
 const mutations = {
-  getAllTransactions(state) {
-    state.transactions;
-  },
   addTransaction(state, { text, amount }) {
     state.transactions.push({
       id: Date.now(),

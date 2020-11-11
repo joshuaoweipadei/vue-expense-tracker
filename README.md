@@ -1,4 +1,4 @@
-# vue-expense-tracker
+# Expense Tracker App with Vue.js + Vuex
 
 ## Project setup
 ```
