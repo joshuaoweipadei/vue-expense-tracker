@@ -19,8 +19,7 @@ export default {
     total(transactions) {
       return transactions
         .map(transaction => transaction.amount)
-        .reduce((acc, item) => (acc += item), 0)
-        .toFixed(2);
+        .reduce((acc, item) => (acc += item), 0);
     }
   }
 };

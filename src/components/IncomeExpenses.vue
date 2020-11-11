@@ -10,7 +10,7 @@
       <div>
         <h4>Expense</h4>
         <p class="money minus">
-          {{ Number(expenses(transactions).toFixed(2)).toLocaleString() }}
+          {{ Number(expenses(transactions)).toLocaleString() }}
         </p>
       </div>
     </div>
@@ -32,8 +32,7 @@ export default {
       return transactions
         .map(transaction => transaction.amount)
         .filter(amount => amount > 0)
-        .reduce((acc, item) => (acc += item), 0)
-        .toFixed(2);
+        .reduce((acc, item) => (acc += item), 0);
     },
     expenses(transactions) {
       return transactions
