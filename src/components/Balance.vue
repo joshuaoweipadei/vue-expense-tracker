@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4>Your Balance</h4>
-    <h1>${{ total(transactions) }}</h1>
+    <h1>${{ Number(total(transactions)).toLocaleString() }}</h1>
   </div>
 </template>
 
