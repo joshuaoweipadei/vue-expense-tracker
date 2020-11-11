@@ -10,7 +10,7 @@
       <div>
         <h4>Expense</h4>
         <p class="money minus">
-          {{ Number(expenses(transactions)).toLocaleString() }}
+          {{ expenses(transactions) === 0 ? expenses(transactions) : Number(expenses(transactions)).toLocaleString() }}
         </p>
       </div>
     </div>
