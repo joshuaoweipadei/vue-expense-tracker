@@ -16,3 +16,4 @@ npm run build
 ```
 
 ### Live demo
+[See demo](https://joshie-vue-expense-tracker.netlify.app/)
