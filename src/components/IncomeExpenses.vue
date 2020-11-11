@@ -3,11 +3,15 @@
     <div class="inc-exp-container">
       <div>
         <h4>Income</h4>
-        <p class="money plus">{{ income(transactions) }}</p>
+        <p class="money plus">
+          {{ Number(income(transactions)).toLocaleString() }}
+        </p>
       </div>
       <div>
         <h4>Expense</h4>
-        <p class="money minus">{{ expenses(transactions).toFixed(2) }}</p>
+        <p class="money minus">
+          {{ Number(expenses(transactions).toFixed(2)).toLocaleString() }}
+        </p>
       </div>
     </div>
   </div>
